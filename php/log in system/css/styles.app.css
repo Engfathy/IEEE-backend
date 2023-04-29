@@ -1,0 +1,186 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+nav {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    
+    max-height: 50px;
+    cursor: pointer;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    -o-transition: all 0.4;
+    -webkit-transition: all 0.4;
+    -moz-transition: all 0.4;
+    -ms-transition: all 0.4;
+    transition: all 0.4;
+}
+
+nav img:hover {
+    mix-blend-mode: color-burn;
+}
+
+nav button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav button:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid white;
+}
+
+.user {
+  
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.user:hover{
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid white;
+}
+
+/* App form styles */
+.app-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .app-form {
+        flex-direction: column;
+    }
+
+}
+
+/* Style for product handling form */
+
+.app-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.app-form button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+.app-form button.delete:hover {
+    opacity: 0.8;
+    background-color: red;
+    color: white;
+}
+
+/* Create product ------delete product---get product---update product-----------------    -*/
+.create-form ,.delete-form ,.get-form ,.update-form{
+   
+        max-width: 90vw;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+}
+.create-form input,.delete-form input ,.get-form input ,.update-form input{
+    padding: 10px;
+}
+.create-form a ,.delete-form a ,.get-form a ,.update-form a {
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.delete-form button.delete-product:hover {
+    opacity: 0.8;
+    background-color: red;
+    color: white;
+}
+
+.create-form button,.delete-form button,.get-form button ,.update-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.create-form button:hover ,.delete-form button:hover,.get-form button:hover ,
+.update-form button:hover{
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+.create-form a:hover ,.delete-form a:hover,.get-form a:hover
+,.update-form a:hover {
+    color: #4CAF50;
+    background-color: white;
+    border: 1px solid #4CAF50;
+}
+    
+    @media only screen and (max-width: 767px) {
+        .create-form ,.delete-form ,.get-form ,.update-form{
+            flex-direction: column;
+        }
+    
+    }
