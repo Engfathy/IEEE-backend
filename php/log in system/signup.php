@@ -25,9 +25,9 @@
             <button type="submit">Sign up</button>
             <?php
                     
-                    if (isset($_GET['msg'])) {
+                    if (isset($_GET['error'])) {
                         echo "<p id='error' style='color:red; text-align:center;'>" 
-                        . htmlspecialchars($_GET['msg']) . "</p>";
+                        . htmlspecialchars($_GET['error']) . "</p>";
                         echo "<script>
                                 setTimeout(function() {
                                     let error = document.getElementById('error');
