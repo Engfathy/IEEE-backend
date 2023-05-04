@@ -27,14 +27,16 @@ class SignupController extends Signup {
      
        if($this->repeatedPass() ==false){
         $error_msg = "confirm password doesnot match";
-        header("Location: http://localhost/log%20in%20system/signup.php?error=" . 
-        urlencode($error_msg)
-        );
+        
         exit();
        }
         $check=$this->checkUser($this->user_name,$this->email);
         if($check === false){
             $this->setUser($this->user_name,$this->email,$this->pass);
+            $error_msg = "user Added successfully";
+            header("Location: http://localhost/log%20in%20system/signup.php?error=" . 
+            urlencode($error_msg)
+            );
             exit();
         }
        

@@ -1,7 +1,6 @@
 <?php
 
 class Dbh {
-   
     private $host="localhost";
     private $user="postgres";
     private $port = '5432';
@@ -22,6 +21,5 @@ class Dbh {
         } catch(PDOException $e) {
             throw new Exception('Error executing query: ' . $e->getMessage());
         }
-      
     }
 }

@@ -31,7 +31,7 @@ class Signup extends Dbh {
         if ($stmt->execute([$user_name,$email,$hashedPass])){
             $stmt= null;
             $msg = "User Added successfuly";
-            header("Location: http://localhost/log%20in%20system/signup.php?msg=" . 
+            header("Location: http://localhost/log%20in%20system/signup.php?error=" . 
             urlencode($msg)
             );
             exit();
